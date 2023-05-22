@@ -1,0 +1,312 @@
+.headerFixed{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 101;
+}
+
+
+.header{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+}
+
+.menuHeaderContainer{
+display: flex;
+justify-content: left;
+align-items: center;
+width: 33%;
+height: 100%;
+}
+.menuHeader{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acctionHeader{
+    width: 40px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+}
+
+.acctionHeader > span{
+    transition: all .5s;
+    transform-origin: left;
+}
+
+.acctionHeader > span {
+    transform: all 1s ;
+}
+
+.spanHeaderButton{
+    width: 100%;
+    height: 2px;
+}
+
+.span1{
+    background-color: aliceblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.span2{
+    background-color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+
+
+.span3{
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.acctionHeader:hover > .span1:first-child {
+    transform: rotate(45deg);
+}
+.acctionHeader:hover > .span2:nth-child(2){
+    opacity: 0;
+}
+.acctionHeader:hover > .span3:last-child{
+    transform: rotate(-45deg);
+}
+
+
+/* Over Menu Seccion */
+
+
+.fixedMenuHeaderOver {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: bottom 0.5s;
+    bottom: -100%;
+  }
+  
+  .fixedMenuHeaderOver.show {
+    bottom: 0;
+  }
+  
+
+.OffHeaderFixed{
+    bottom: -100%;
+}
+
+
+/* Dentro del over */
+
+.fixedMenuHeaderOverOn{
+    bottom: 0%;
+}
+
+.menuHeaderOver{
+    color: #ffffff;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.buttonOfOver{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+    top: 0;
+    margin-top: 2%;
+    cursor: pointer;
+    transition: 1s all;
+    font-size: 20px;
+}
+
+
+.menuOver{
+    margin: 5%;
+}
+
+.all-button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin: 4px;
+}
+
+.all-button:hover{
+    color: black;
+    background-color: rgb(89, 89, 89);
+}
+
+
+.category-button {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 8px 12px;
+    margin: 4px;
+    cursor: pointer;
+    font-size: 40px;
+    transition: all 0.3s;
+  }
+
+  .category-button:hover{
+    background-color: black;
+    color: white;
+  }
+  
+/* Logo */
+
+.logoHeaderContainer{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 33%;
+}
+.logoHeader{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoStyle{
+    text-decoration: none;
+    display: inline;
+    color: white;
+    font-family: 'fontThin', sans-serif;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+
+/* Search */
+
+.searchHeaderContainer{
+display: flex;
+justify-content: right;
+align-items: center;
+width: 33%;
+height: 100%;
+}
+.searchHeader{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchIcon{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* desplegable del search */
+
+
+.ficedSearchHeaderOver{
+    z-index: 100;
+    position: fixed;
+    bottom: -100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    height: 100%;
+    transition: bottom 0.5s;
+}
+
+@media (max-width: 1200px) {
+    .ficedSearchHeaderOver{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .ficedSearchHeaderOver{
+        width: 100%;
+    }
+}
+
+
+.show{
+    bottom: 0;
+}
+
+.filtroProyectos{
+    height: 100%;
+    width: 100%;
+}
+
+.searchContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.inputProyecto{
+    color: white;
+    border: none;
+    width: 70%;
+    height: 50%;
+    padding-left: 5%;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(98, 98, 98);
+}
+
+
+.resultSearchContainer{
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.boton-proyecto{
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    border-left: 2px solid black;
+    transition: all 0.4s;
+}
+
+.boton-proyecto:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Header Styles */
+
